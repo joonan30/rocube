@@ -7,9 +7,9 @@ Find a threshold of quality metrics for high-quality (HQ) rare variants from who
 
 ## Input file
 
-The genotype matrix with GATK quality metrics is expected. The current version expects a matrix file generated from HAIL (`export_genotype`). 
+The genotype matrix with GATK quality metrics is needed. The current version expects an input matrix file generated from HAIL `export_genotype` function. 
 
-We will update more options to handle various file format. 
+We will update more options to handle a genotype matrix from various VCF tools. 
 
 ## Positive and Negative training set
 
@@ -20,7 +20,7 @@ Our current method assumes that users create a positive and negative set of vari
 	- Positive set will be variants transmitted from parent to child. We assume these are likely true calls.
 	- Negative set will be a Mendelian violation call in one child but also observed in one unrelated individual.
 
-For HQ rare variants, we refine our positive and negative set to AC(allele count) == 2 in your VCF.
+To optimize filtering criteria for rare variants, we refine our positive and negative training set to `AC(allele count) == 2` in your VCF.
 
 ## Usage
 
