@@ -33,3 +33,9 @@ python rocube.py \
 		-a minimum sensitivity for output (default: 0.90) \
 		-b minimum specificity for output (default: 0.99)
 ```
+
+## Future updates
+
+- [ ] Examples for each step and plot function
+- [ ] Script for hail to generate a genotype matrix
+- [ ] A guidline for adaptive threshold
